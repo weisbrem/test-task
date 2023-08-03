@@ -1,0 +1,46 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "test-task",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weisbrem/test-task.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "swiperjs",
+    "gulp"
+  ],
+  "author": "weisbrem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weisbrem/test-task/issues"
+  },
+  "homepage": "https://github.com/weisbrem/test-task#readme",
+  "dependencies": {
+    "swiper": "^10.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.27",
+    "postcss-csso": "^6.0.1"
+  }
+}
