@@ -1,11 +1,25 @@
 new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
+  centeredSlides: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  //pagination
+  pagination: {
+    el: '.slider__buttons',
+    clickable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // when window width is >= 640px
+    // 640: {
+    //   slidesPerView: 1.5,
+    //   // spaceBetween: 40,
+    //
+    // },
   },
 });
