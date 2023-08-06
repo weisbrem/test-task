@@ -56,7 +56,7 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp
-    .src("src/img/**/*.{png,svg}")
+    .src("src/img/**/*.{png, jpg, svg}")
     .pipe(
       imagemin([
         imagemin.mozjpeg({ progressive: true }),
@@ -79,7 +79,7 @@ exports.copyImages = copyImages;
 
 const createWebp = () => {
   return gulp
-    .src("src/img/**/*.{png}")
+    .src("src/img/**/*.{png, jpg}")
     .pipe(
       webp({
         quality: 90,
@@ -94,7 +94,7 @@ exports.createWebp = createWebp;
 
 const createAvif = () => {
   return gulp
-    .src("src/img/**/*.{png}")
+    .src("src/img/**/*.{png, jpg}")
     .pipe(
       avif({
         quality: 90,
