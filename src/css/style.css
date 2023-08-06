@@ -1,3 +1,88 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: 'FuturaPT-medium';
+  font-display: swap;
+  src: url('../fonts/Futura-PT_Medium.woff2') format('woff2'),
+    url('../fonts/Futura-PT_Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter-light';
+  font-display: swap;
+  src: url('../fonts/Inter-Light.woff2') format('woff2'),
+    url('../fonts/Inter-Light.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Inter-regular';
+  font-display: swap;
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter-medium';
+  font-display: swap;
+  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/Inter-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter-semiBold';
+  font-display: swap;
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/Inter-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter-bold';
+  font-display: swap;
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  /* Main */
+  --header-bgc: #f6f3ef;
+  --text-color-black: #1d2b3f;
+  --text-color-black-light: #2d3436;
+  --text-color-brown: #b68756;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Slider */
+  --slider-item-bgc: var(--header-bgc);
+  --slider-item-img-bg: #ebe5de;
+  --slider-buttons: var(--slider-item-img-bg);
+  --slider-button-active: var(--text-color-brown);
+
+  /* Download apps */
+  --logo-bgc: #f4f6f7;
+
+  /* Footer */
+  --footer-bgc: #f8f2ec;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
