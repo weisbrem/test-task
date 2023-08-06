@@ -1,17 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon/icon-152.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/icon-180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <script src="js/app.min.js" defer></script>
+    <link
+      rel="preload"
+      href="fonts/Futura-PT_Medium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <title>Test Task</title>
   </head>
-  <body>
-    <h1>test task</h1>
+  <body class="page__body">
+    <header class="header">
+      <img class="header__img" src="img/logo.svg" alt="Company logo" />
+    </header>
+    <main class="main-content">
+      <section class="trade-acc container">
+        <h1 class="trade-acc__title">
+          <img class="trade-acc__img" src="img/mt-logo.png" alt="M1 logo" />
+          <span>Trade Your</span>
+          <span>MetaTrader</span>
+          Accounts in One App!
+        </h1>
+        <div class="trade-acc__links">
+          <a class="trade-acc__links__qr" href="/">
+            <img src="img/QR-header.png" alt="QR code" />
+          </a>
+          <div class="trade-acc__links__stores store__links">
+            <a class="store__links__apple" href="/">
+              <img src="img/apple.svg" alt="App store" />
+            </a>
+            <a class="store__links__google" href="/">
+              <img src="img/android.svg" alt="Google Play" />
+            </a>
+          </div>
+          <p class="trade-acc__subtitle">
+            Don't wait - download the App with MT4/MT5 included now!
+          </p>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="presentation__description">
+          <p class="presentation__description__text container">
+            Looking for a trading platform that brings your Metatrader accounts to your fingertips?
+            <span class="presentation__description__subtext">Look no further than the App!</span>
+          </p>
+        </div>
+        <img class="presentation__img" src="img/phones.png" alt="App pictures" />
+        <div class="presentation__subtitle">
+          <p class="presentation__subtitle__text container">
+            With the MT4 and MT5 platforms included, our app offers unparalleled convenience and
+            functionality for traders on-the-go.
+          </p>
+          <div class="presentation__links store__links">
+            <a class="store__links__apple" href="/">
+              <img src="img/apple.svg" alt="App store" />
+            </a>
+            <a class="store__links__google" href="/">
+              <img src="img/android.svg" alt="Google Play" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="swiper slider">
+        <div class="slider__buttons container"></div>
+        <ul class="swiper-wrapper container">
+          <li class="swiper-slide slider__item">
+            <p class="slider__item__text">
+              <span>Seamless trading & advanced charting:</span><br />
+              Execute trades, monitor your positions, and analyse like a pro with live charts and
+              indicators from TradingView.
+            </p>
+            <div class="slider__item__img">
+              <img src="img/slider/slide-1.png" alt="" />
+            </div>
+          </li>
+          <li class="swiper-slide slider__item">
+            <p class="slider__item__text">
+              <span>Full account management:</span><br />
+              Manage your trading accounts, deposit funds with 0 fees, and withdraw profits, all
+              from within the app.
+            </p>
+            <div class="slider__item__img">
+              <img src="img/slider/slide-2.png" alt="" />
+            </div>
+          </li>
+          <li class="swiper-slide slider__item">
+            <p class="slider__item__text">
+              <span>Stay on top of market moves:</span><br />
+              Use the integrated Economic Calendar and set alerts, and receive push notifications on
+              increased volatility or significant market moves.
+            </p>
+            <div class="slider__item__img">
+              <img src="img/slider/slide-3.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="download container">
+        <div class="download__img__container">
+          <img class="download__img" src="img/download-logo.png" alt="Download logo" />
+        </div>
+
+        <p class="download__description">
+          Download MT4 for iOS/Android now and gain access to a wide range of features & over 2100
+          derivatives in
+          <span>Metals</span>, <span>Energy</span>, <span>Stocks</span>, <span>Indices</span>,
+          <span>Futures</span> & more!
+        </p>
+
+        <div class="store__links">
+          <a class="store__links__apple" href="/">
+            <img src="img/apple.svg" alt="App store" />
+          </a>
+          <a class="store__links__google" href="/">
+            <img src="img/android.svg" alt="Google Play" />
+          </a>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__description__container container">
+          <p class="features__description">
+            With the App, you can take your trading to the next level. Whether you're an experienced
+            trader or just starting out, our platform offers the features and functionality you need
+            to trade like a pro!
+          </p>
+
+          <div class="features__links">
+            <img class="features__qrcode" src="img/QR-footer.png" alt="QR code" />
+
+            <div class="store__links">
+              <a class="store__links__apple" href="/">
+                <img src="img/apple.svg" alt="App store" />
+              </a>
+              <a class="store__links__google" href="/">
+                <img src="img/android.svg" alt="Google Play" />
+              </a>
+            </div>
+
+            <p class="features__links__text">
+              Download the award-winning App with MT4/MT5 included.
+            </p>
+          </div>
+        </div>
+        <div class="features__img__container">
+          <img class="features__img" src="img/phones-footer.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        Need Help? <br />
+        Visit our <a class="footer__link" href="/">Help Section</a>
+      </p>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>
