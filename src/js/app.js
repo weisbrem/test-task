@@ -16,10 +16,9 @@ new Swiper('.swiper', {
       spaceBetween: 10,
     },
     // when window width is >= 640px
-    // 640: {
+    // 500: {
     //   slidesPerView: 1.5,
-    //   // spaceBetween: 40,
-    //
+    //   spaceBetween: 40,
     // },
   },
 });
